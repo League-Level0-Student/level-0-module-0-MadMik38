@@ -16,6 +16,7 @@ rob.setSpeed(100);
 		// Set the robot window size to 800 x 800
 rob.setWindowSize(800, 800);
 rob.penDown();
+
 		//  COUNT. Make another int variable to count how many times the loop has repeated
 		//         Set its start value to zero.
 		int count = 0;
@@ -29,14 +30,19 @@ rob.move(64);
 			rob.turn(-40);
 			   // DRAW FLAME     Move the robot the distance in the variable flameSize
 			rob.move(flameSize);
+			rob.setPenColor(Color.yellow);
 				//               Turn the robot 170 degrees
 			rob.turn(170);
 				//               Move the robot the distance in the variable flameSize (again)
 			rob.move(flameSize);
+			rob.setPenColor(Color.black);
+			
 			   // TURN RIGHT     Turn the robot 64 degrees to the right
 			rob.turn(64);
+			
 				// MOVE         Move the robot the distance in the variable baseSize
 			rob.move(baseSize);
+			
 				//  INCREASE COUNT. Increase the count by 1
 		count += 1;
 		//  End the while loop here
