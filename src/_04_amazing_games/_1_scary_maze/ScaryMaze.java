@@ -16,6 +16,10 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
+import javax.swing.JOptionPane;
+
+import javax.swing.JOptionPane;
+
 public class ScaryMaze extends JPanel implements Runnable, MouseMotionListener {
 	
 	/***********  SOUND ***************
@@ -82,18 +86,24 @@ int backgroundColor=16777216;
 		
 		if (!started && mouseColor==backgroundColor) {
 			scare();
-		
+			
+		}
 		
 			//9. If the mouse falls off the path (which means it is on the background color)
 			//		call the scare method - scare();
 			
 			//13.  If the mouse is on the end color, pop up a message to tell them they won!
-			//    (you will need to get the number of the END COLOR by moving the mouse over it)
-
-					
+		//    (you will need to get the number of the END COLOR by moving the mouse over it)
 			
+int endColor= -59580;
+			
+	if (!started && mouseColor==endColor) {
+		JOptionPane.showMessageDialog(null, "YOU WON");	
+	
+			}					
+				
 		}	
-	}
+	
 
 	private void scare() {
 		
@@ -107,14 +117,14 @@ int backgroundColor=16777216;
 			//10. Find a scary sound and put it in the _04_amazing_games._1_scary_maze package (where you put your maze picture). 
 			//    You can find a sound on freesound.org. Log in as leagueofamazing/code4life.		
 			//11. Play the scary sound. Hint: use the playScarySound method with the name of your sound file		
-
+playScarySound("standardScarySound.wav");
 			
 		}	
 		/**********  SHOW A PICTURE ***************/
 
 		//12. Find a scary image and drop it into the _04_amazing_games._1_scary_maze package. 
 		//    Use the showScaryImage method below and send it the name of your picture file
-		
+		showScaryImage("ScaryCat.JPEG.PNG");
 		
 	}
 	
