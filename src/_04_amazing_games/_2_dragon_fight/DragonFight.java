@@ -88,7 +88,7 @@ public class DragonFight {
 			// round)
 	
 
-		} // this is the end of the while loop hi
+		} // this is the end of the while loop hi there
 
 	}
 
