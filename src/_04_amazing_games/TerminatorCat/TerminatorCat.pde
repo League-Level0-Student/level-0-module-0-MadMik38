@@ -39,11 +39,13 @@ void draw() {
           println("Mouse’s x-position: " + mouseX + "\n" + "Mouse’s y-position: " + mouseY + "\n");
           
 if(x > 500){
-  x=278;
-  y=265;
+  x-=222;
+  y-=235;
   
-  x2=368;
-  y2=269;
+  x2-=132;
+  y2-=231;
+  
+  background(cat);
 }      
       }
 
